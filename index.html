@@ -1,403 +1,85 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaynifakaet - Эксперт в редакторстве, дизайне и кибербезопасности</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
-</head>
-<body>
-    <!-- Навигация -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <span class="logo-icon">🔒</span>
-                <span class="logo-text">Shaynifakaet</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#services">Обучение</a></li>
-                <li><a href="#register">Регистрация</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Герой секция -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Привет, я <span class="highlight">@shaynifakaet</span></h1>
-                <p class="hero-subtitle">Профессионал в редакторстве, дизайне и кибербезопасности</p>
-                <p class="hero-description">Создаю уникальный контент, проектирую интуитивные интерфейсы и обеспечиваю цифровую безопасность для клиентов по всему миру.</p>
-                <div class="hero-badges">
-                    <span class="badge badge-editing"><i class="fas fa-edit"></i> Редакторство</span>
-                    <span class="badge badge-design"><i class="fas fa-palette"></i> Дизайн</span>
-                    <span class="badge badge-security"><i class="fas fa-shield-alt"></i> Кибербезопасность</span>
+<!-- Добавьте этот блок после секции с курсами, перед регистрацией -->
+<section id="payment" class="payment">
+    <div class="container">
+        <h2 class="section-title">Способы оплаты</h2>
+        <p class="section-subtitle">Выберите удобный способ оплаты курсов</p>
+        
+        <div class="payment-methods">
+            <div class="payment-card">
+                <div class="payment-icon">
+                    <i class="fas fa-credit-card"></i>
                 </div>
-                <a href="#services" class="btn btn-primary">Выбрать обучение</a>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-icon">🔒</div>
-                    <h3>@shaynifakaet</h3>
-                    <p>Эксперт в цифровой среде</p>
-                    <div class="profile-stats">
-                        <div class="stat">
-                            <span class="stat-value">5+</span>
-                            <span class="stat-label">лет опыта</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">200+</span>
-                            <span class="stat-label">проектов</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">99%</span>
-                            <span class="stat-label">довольных клиентов</span>
+                <h3>Перевод на карту</h3>
+                <p>Оплатите курсы переводом на банковскую карту</p>
+                <div class="card-details">
+                    <div class="card-number">
+                        <span>Номер карты:</span>
+                        <div class="copyable" data-text="2200702115796281">
+                            <code>2200 7021 1579 6281</code>
+                            <button class="copy-btn" title="Скопировать">
+                                <i class="fas fa-copy"></i>
+                            </button>
                         </div>
                     </div>
+                    <p class="payment-instruction">
+                        После перевода отправьте скриншот чека в Telegram для подтверждения оплаты
+                    </p>
+                    <a href="https://t.me/shaynifakaet" target="_blank" class="btn btn-telegram">
+                        <i class="fab fa-telegram"></i> Написать в Telegram
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Обо мне -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Обо мне</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Я профессиональный редактор, дизайнер и специалист по кибербезопасности с более чем 5-летним опытом работы в цифровой индустрии.</p>
-                    <p>Моя специализация включает создание качественного контента, проектирование пользовательских интерфейсов и обеспечение безопасности цифровых продуктов.</p>
-                    <p>Я помогаю клиентам и студентам развивать навыки в этих востребованных областях через индивидуальные консультации и обучающие курсы.</p>
-                </div>
-                <div class="about-skills">
-                    <div class="skill">
-                        <div class="skill-name">Редакторство</div>
-                        <div class="skill-bar">
-                            <div class="skill-level skill-level-95"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">Веб-дизайн</div>
-                        <div class="skill-bar">
-                            <div class="skill-level skill-level-90"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">Кибербезопасность</div>
-                        <div class="skill-bar">
-                            <div class="skill-level skill-level-85"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">UI/UX Дизайн</div>
-                        <div class="skill-bar">
-                            <div class="skill-level skill-level-88"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Обучение -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Курсы обучения</h2>
-            <p class="section-subtitle">Выберите курс, который соответствует вашим целям и интересам</p>
             
-            <div class="services-grid">
-                <!-- Курс 1 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-edit"></i>
-                    </div>
-                    <h3 class="service-title">Обучение редакторству</h3>
-                    <p class="service-description">Освойте искусство редактирования текстов, создания качественного контента и работы с различными форматами.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Основы редактуры</li>
-                        <li><i class="fas fa-check-circle"></i> Стилистика текста</li>
-                        <li><i class="fas fa-check-circle"></i> SEO-оптимизация</li>
-                        <li><i class="fas fa-check-circle"></i> Работа с CMS</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">150 ₽</span>
-                        <button class="btn btn-buy" data-course="Редакторству" data-price="150">Купить курс</button>
-                    </div>
+            <div class="payment-card">
+                <div class="payment-icon">
+                    <i class="fab fa-youtube"></i>
                 </div>
-                
-                <!-- Курс 2 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3 class="service-title">Обучение дизайну</h3>
-                    <p class="service-description">Изучите принципы дизайна, цветовые схемы, типографику и создание визуально привлекательных интерфейсов.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Основы композиции</li>
-                        <li><i class="fas fa-check-circle"></i> Работа с цветом</li>
-                        <li><i class="fas fa-check-circle"></i> Adobe Photoshop & Figma</li>
-                        <li><i class="fas fa-check-circle"></i> UI/UX принципы</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">100 ₽</span>
-                        <button class="btn btn-buy" data-course="Дизайну" data-price="100">Купить курс</button>
-                    </div>
-                </div>
-                
-                <!-- Курс 3 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="service-title">Обучение кибербезопасности</h3>
-                    <p class="service-description">Познакомьтесь с основами защиты данных, сетевой безопасности и методами противодействия кибератакам.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Основы безопасности</li>
-                        <li><i class="fas fa-check-circle"></i> Защита от взлома</li>
-                        <li><i class="fas fa-check-circle"></i> Шифрование данных</li>
-                        <li><i class="fas fa-check-circle"></i> Сетевая безопасность</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">300 ₽</span>
-                        <button class="btn btn-buy" data-course="Кибербезопасности" data-price="300">Купить курс</button>
-                    </div>
-                </div>
-                
-                <!-- Курс 4 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user-secret"></i>
-                    </div>
-                    <h3 class="service-title">Приватная консультация</h3>
-                    <p class="service-description">Индивидуальная сессия с экспертом по любому из направлений. Получите персональные рекомендации.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Персональный подход</li>
-                        <li><i class="fas fa-check-circle"></i> Разбор вашего кейса</li>
-                        <li><i class="fas fa-check-circle"></i> Рекомендации по развитию</li>
-                        <li><i class="fas fa-check-circle"></i> Ответы на вопросы</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">150 ₽</span>
-                        <button class="btn btn-buy" data-course="Приватная консультация" data-price="150">Заказать</button>
-                    </div>
+                <h3>Быстрая покупка</h3>
+                <p>Напишите напрямую в Telegram для быстрого оформления заказа</p>
+                <div class="telegram-promo">
+                    <p>Получите консультацию по курсам и скидку при заказе через Telegram</p>
+                    <a href="https://t.me/shaynifakaet" target="_blank" class="btn btn-telegram btn-block">
+                        <i class="fab fa-telegram"></i> Купить обучение в Telegram
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Регистрация -->
-    <section id="register" class="register">
-        <div class="container">
-            <h2 class="section-title">Регистрация на сайте</h2>
-            <p class="section-subtitle">Создайте аккаунт для доступа к курсам и материалам</p>
             
-            <div class="register-form-container">
-                <form id="registrationForm" class="register-form">
-                    <div class="form-group">
-                        <label for="email">Email адрес</label>
-                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="password">Пароль</label>
-                        <input type="password" id="password" name="password" required placeholder="Не менее 8 символов">
-                        <div class="password-strength">
-                            <div class="strength-bar"></div>
-                            <span class="strength-text">Надежность пароля</span>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="confirmPassword">Подтверждение пароля</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Повторите пароль">
-                        <div class="password-match"></div>
-                    </div>
-                    
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">Я согласен с условиями использования и политикой конфиденциальности</label>
-                    </div>
-                    
-                    <div class="form-notice">
-                        <i class="fas fa-info-circle"></i>
-                        <span>После регистрации данные аккаунта будут отправлены на email: ttspider777@gmail.com</span>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-block">Зарегистрироваться</button>
-                </form>
-                
-                <div class="register-info">
-                    <h3>Преимущества регистрации</h3>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Доступ ко всем курсам</li>
-                        <li><i class="fas fa-check"></i> Персональные рекомендации</li>
-                        <li><i class="fas fa-check"></i> Поддержка от эксперта</li>
-                        <li><i class="fas fa-check"></i> Обновления материалов</li>
-                        <li><i class="fas fa-check"></i> Сертификаты о прохождении</li>
-                    </ul>
-                    
-                    <div class="creator-info">
-                        <h4>Создатель сайта</h4>
-                        <div class="creator-badge">
-                            <i class="fas fa-code"></i>
-                            <span>@shaynifakaet</span>
-                        </div>
-                        <p>Сайт разработан с акцентом на безопасность и удобство пользователя.</p>
-                    </div>
+            <div class="payment-card">
+                <div class="payment-icon">
+                    <i class="fas fa-shield-alt"></i>
                 </div>
+                <h3>Безопасная оплата</h3>
+                <p>Гарантия безопасности ваших платежей</p>
+                <ul class="security-features">
+                    <li><i class="fas fa-check-circle"></i> Защищенные транзакции</li>
+                    <li><i class="fas fa-check-circle"></i> Подтверждение оплаты</li>
+                    <li><i class="fas fa-check-circle"></i> Доступ к курсу в течение 24 часов</li>
+                    <li><i class="fas fa-check-circle"></i> Техническая поддержка</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Контакты -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Контакты и поддержка</h2>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email для связи</h4>
-                            <p>ttspider777@gmail.com</p>
-                            <small>По вопросам сотрудничества и поддержки</small>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Безопасность данных</h4>
-                            <p>Ваши данные защищены с использованием современных методов шифрования</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Время ответа</h4>
-                            <p>Обычно отвечаю в течение 24 часов</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-message">
-                    <h3>Сообщение для создателя сайта</h3>
-                    <p>Если у вас есть вопросы по функционалу сайта или предложения по улучшению, напишите мне:</p>
-                    <div class="creator-contact">
-                        <i class="fab fa-telegram"></i>
-                        <span>@shaynifakaet</span>
-                    </div>
-                    <div class="site-version">
-                        <i class="fas fa-code-branch"></i>
-                        <span>Версия 1.0 | Сайт создан с использованием HTML, CSS и JavaScript</span>
-                    </div>
-                </div>
+        
+        <div class="payment-notice">
+            <div class="notice-icon">
+                <i class="fas fa-info-circle"></i>
             </div>
-        </div>
-    </section>
-
-    <!-- Футер -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-icon">🔒</span>
-                    <span class="logo-text">Shaynifakaet</span>
-                    <p>Эксперт в редакторстве, дизайне и кибербезопасности</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Быстрые ссылки</h4>
-                    <ul>
-                        <li><a href="#about">Обо мне</a></li>
-                        <li><a href="#services">Курсы</a></li>
-                        <li><a href="#register">Регистрация</a></li>
-                        <li><a href="#contact">Контакты</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-courses">
-                    <h4>Курсы обучения</h4>
-                    <ul>
-                        <li>Редакторство - 150 ₽</li>
-                        <li>Дизайн - 100 ₽</li>
-                        <li>Кибербезопасность - 300 ₽</li>
-                        <li>Приватка - 150 ₽</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-legal">
-                    <h4>Информация</h4>
-                    <p>© 2023 Shaynifakaet. Все права защищены.</p>
-                    <p>Сайт создан в образовательных целях.</p>
-                    <div class="footer-creator">
-                        <i class="fas fa-user-secret"></i>
-                        <span>Создатель: @shaynifakaet</span>
-                    </div>
-                </div>
+            <div class="notice-content">
+                <h4>Важно!</h4>
+                <p>После оплаты обязательно свяжитесь с нами в Telegram <strong>@shaynifakaet</strong> и отправьте скриншот чека для активации доступа к курсу.</p>
+                <a href="https://t.me/shaynifakaet" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-telegram"></i> Перейти в Telegram
+                </a>
             </div>
-        </div>
-    </footer>
-
-    <!-- Модальное окно покупки -->
-    <div id="purchaseModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h3>Покупка курса</h3>
-            <p id="courseDetails">Вы выбрали курс: <span id="selectedCourse"></span></p>
-            <p>Стоимость: <span id="coursePrice" class="price"></span></p>
-            <div class="payment-methods">
-                <h4>Выберите способ оплаты:</h4>
-                <div class="payment-options">
-                    <div class="payment-option">
-                        <input type="radio" id="card" name="payment" checked>
-                        <label for="card">Банковская карта</label>
-                    </div>
-                    <div class="payment-option">
-                        <input type="radio" id="yoomoney" name="payment">
-                        <label for="yoomoney">ЮMoney</label>
-                    </div>
-                    <div class="payment-option">
-                        <input type="radio" id="crypto" name="payment">
-                        <label for="crypto">Криптовалюта</label>
-                    </div>
-                </div>
-            </div>
-            <button id="confirmPurchase" class="btn btn-primary btn-block">Оплатить</button>
         </div>
     </div>
+</section>
 
-    <!-- Модальное окно успешной регистрации -->
-    <div id="successModal" class="modal">
-        <div class="modal-content success-modal">
-            <div class="success-icon">
-                <i class="fas fa-check-circle"></i>
-            </div>
-            <h3>Регистрация успешна!</h3>
-            <p id="successMessage">Ваши данные были отправлены на email ttspider777@gmail.com</p>
-            <p class="success-note">Проверьте свою почту для подтверждения аккаунта.</p>
-            <button id="closeSuccess" class="btn btn-primary">Продолжить</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+<!-- Также добавляем кнопку в Hero секцию (после существующей кнопки) -->
+<div class="hero-buttons">
+    <a href="#services" class="btn btn-primary">Выбрать обучение</a>
+    <a href="https://t.me/shaynifakaet" target="_blank" class="btn btn-telegram">
+        <i class="fab fa-telegram"></i> Купить обучение
+    </a>
+</div>
+                      
+             
